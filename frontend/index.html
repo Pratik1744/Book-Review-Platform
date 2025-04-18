@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Review Platform</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>📚 BookReview</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="featured">
+      <h2>Featured Book</h2>
+      <div class="book-card">
+        <img src="https://via.placeholder.com/120x180" alt="Book cover">
+        <div class="book-info">
+          <h3>The Great Gatsby</h3>
+          <p>by F. Scott Fitzgerald</p>
+          <p>A classic novel set in the 1920s...</p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-list">
+      <h2>Book Listings</h2>
+      <div class="book-grid">
+        <div class="book-card small">
+          <img src="https://via.placeholder.com/100x150" alt="Book cover">
+          <div>
+            <h4>Book Title</h4>
+            <p>by Author Name</p>
+          </div>
+        </div>
+        <div class="book-card small">
+          <img src="https://via.placeholder.com/100x150" alt="Book cover">
+          <div>
+            <h4>Another Book</h4>
+            <p>by Someone Else</p>
+          </div>
+        </div>
+        <!-- Add more books -->
+      </div>
+    </section>
+
+    <section class="review-form">
+      <h2>Leave a Review</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+
+        <label for="rating">Rating:</label>
+        <select id="rating">
+          <option>5</option>
+          <option>4</option>
+          <option>3</option>
+          <option>2</option>
+          <option>1</option>
+        </select>
+
+        <label for="review">Review:</label>
+        <textarea id="review" rows="4"></textarea>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BookReview. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
